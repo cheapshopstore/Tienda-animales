@@ -273,3 +273,98 @@ a { color: inherit; text-decoration: none; }
   .footer-inner { flex-direction: column; text-align: center; }
   .footer-nav a { margin: 0 10px; }
 }
+
+/* ===== Fichas de producto ===== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin: 32px 0 56px;
+}
+
+.product-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  aspect-ratio: 1 / 1;
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8A8368;
+  font-size: 0.85rem;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.product-body p {
+  font-size: 0.9rem;
+  color: #55523F;
+  flex-grow: 1;
+  margin: 0 0 16px;
+}
+
+.product-price {
+  font-weight: 600;
+  color: var(--pine-dark);
+  margin-bottom: 12px;
+}
+
+.btn-amazon {
+  display: inline-block;
+  text-align: center;
+  background: var(--mustard);
+  color: var(--pine-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+
+/* ===== También te puede interesar ===== */
+.related {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.related h2 { font-size: 1.2rem; }
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.related-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 0.85rem;
+}
+
+.related-card strong { display: block; margin-bottom: 4px; }
