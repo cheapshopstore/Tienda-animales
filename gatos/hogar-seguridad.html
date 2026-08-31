@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arena y bandejas para gatos · Tienda Animales</title>
+  <title>Hogar y seguridad para gatos · Tienda Animales</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
-
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MSJSYWCLSH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('consent', 'default', { analytics_storage: 'denied' });
-  gtag('config', 'G-MSJSYWCLSH');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSJSYWCLSH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent', 'default', { analytics_storage: 'denied' });
+    gtag('config', 'G-MSJSYWCLSH');
+  </script>
 </head>
 <body>
 
-    <div id="cookieBanner" class="is-hidden">
+  <div id="cookieBanner" class="is-hidden">
     <p>Usamos cookies de analítica para entender cómo se usa la web. Puedes aceptarlas o rechazarlas. Más info en nuestra <a href="../politica-privacidad.html">política de privacidad</a>.</p>
     <div class="cookie-actions">
       <button id="cookieReject">Rechazar</button>
@@ -30,31 +30,41 @@
 
   <header class="site-header">
     <div class="wrap header-inner">
-            <a href="../index.html" class="logo">Tienda<span>Animales</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="../index.html">Inicio</a>
+        <a href="rascadores.html">Rascadores</a>
+        <a href="higiene-cuidado.html">Higiene y cuidado</a>
+        <a href="hogar-seguridad.html">Hogar y seguridad</a>
+        <a href="juguetes.html">Juguetes</a>
+        <a href="alimentacion.html">Alimentación</a>
+        <a href="arenero.html">Arenero</a>
+        <a href="confort.html">Confort</a>
+        <a href="accesorios.html">Accesorios</a>
+      </nav>
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <nav class="main-nav" id="mainNav">
-        <a href="../index.html">Inicio</a>
-        <a href="index.html">Gatos</a>
-        <a href="../sobre-nosotros.html">Sobre nosotros</a>
-        <a href="../contacto.html">Contacto</a>
-      </nav>
+      <a href="../index.html" class="logo">Tienda<span>Animales</span></a>
     </div>
   </header>
+
+  <div class="quality-banner">
+    Todos los productos que recomendamos están elegidos por su calidad-precio — no vas a encontrar mejor opción.
+  </div>
 
   <main>
 
     <section class="hero">
       <div class="wrap hero-inner">
-        <p class="eyebrow">Gatos · Arena y bandejas</p>
-        <h1>La compra que se repite cada mes, sin sorpresas de olor</h1>
+        <p class="eyebrow">Gatos · Hogar y seguridad</p>
+        <h1>Protege tus muebles y evita sustos en casa</h1>
         <p class="hero-lead">Aquí van las fichas de producto, con enlace de afiliado a Amazon en cada una.</p>
       </div>
     </section>
 
     <section class="categories wrap">
-      <p>(Aquí irán las fichas de cada producto recomendado — las montamos más adelante.)</p>
+      <div class="product-grid">
+      </div>
     </section>
 
   </main>
@@ -63,6 +73,7 @@
     <div class="wrap footer-inner">
       <p>&copy; 2026 Tienda Animales</p>
       <nav class="footer-nav">
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
         <a href="../aviso-afiliados.html">Aviso de afiliados</a>
         <a href="../politica-privacidad.html">Política de privacidad</a>
         <a href="../contacto.html">Contacto</a>
@@ -70,7 +81,7 @@
     </div>
   </footer>
 
-    <script src="../js/script.js"></script>
+  <script src="../js/script.js"></script>
 
 </body>
 </html>
