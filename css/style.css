@@ -461,12 +461,23 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ===== Fondo con parallax ===== */
+/* ===== Fondo con parallax ===== */
+html {
+  background-color: var(--paper);
+}
+
 body {
   background-image: url('../images/fondo-mascotas.png');
   background-repeat: repeat;
   background-size: 480px;
   background-attachment: fixed;
   background-color: var(--paper);
+}
+
+@media (max-width: 640px) {
+  body {
+    background-attachment: scroll;
+  }
 }
 
 body::before {
