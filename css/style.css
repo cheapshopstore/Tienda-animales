@@ -317,6 +317,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
   color: #8A8368;
   font-size: 0.85rem;
+  min-height: 0;
 }
 
 .product-image img {
@@ -337,14 +338,26 @@ a { color: inherit; text-decoration: none; }
 .product-body h3 {
   font-size: 1.05rem;
   margin-bottom: 6px;
-  min-height: 3.6em;
+  line-height: 1.3;
+  height: 2.6em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .product-body p {
   font-size: 0.9rem;
   color: #55523F;
-  min-height: 3.9em;
   margin: 0 0 16px;
+  line-height: 1.4;
+  height: 4.2em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .product-price {
