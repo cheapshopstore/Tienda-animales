@@ -13,6 +13,7 @@ const consent = localStorage.getItem("cookieConsent");
 if (cookieBanner) {
   if (!consent) {
     cookieBanner.classList.remove("is-hidden");
+    document.body.classList.add("has-cookie-banner");
   }
 
   if (consent === "granted") {
@@ -23,10 +24,12 @@ if (cookieBanner) {
     localStorage.setItem("cookieConsent", "granted");
     gtag('consent', 'update', { analytics_storage: 'granted' });
     cookieBanner.classList.add("is-hidden");
+    document.body.classList.remove("has-cookie-banner");
   });
 
   cookieReject.addEventListener("click", function () {
     localStorage.setItem("cookieConsent", "denied");
     cookieBanner.classList.add("is-hidden");
+    document.body.classList.remove("has-cookie-banner");
   });
 }
