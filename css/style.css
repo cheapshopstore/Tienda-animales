@@ -536,3 +536,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.product-card {
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(28, 47, 36, 0.12);
+}

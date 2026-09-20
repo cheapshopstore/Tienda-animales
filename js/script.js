@@ -33,3 +33,12 @@ if (cookieBanner) {
     document.body.classList.remove("has-cookie-banner");
   });
 }
+document.querySelectorAll(".product-card").forEach(function (card) {
+  const link = card.querySelector(".btn-amazon");
+  if (!link) return;
+
+  card.addEventListener("click", function (event) {
+    if (event.target.closest("a")) return;
+    window.open(link.href, "_blank", "noopener");
+  });
+});
