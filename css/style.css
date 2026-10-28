@@ -546,3 +546,16 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(28, 47, 36, 0.12);
 }
+.categories h2 {
+  font-size: 2rem;
+}
+
+.why-home h2 {
+  font-size: 2rem;
+}
+
+@media (max-width: 640px) {
+  .categories h2 {
+    text-align: center;
+  }
+}
